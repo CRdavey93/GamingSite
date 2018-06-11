@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="502a04b190a44464931056c19a9b4fed" Name="Diagram1">
+        <EntityTypeShape EntityType="OneStopGamingModel.Cart" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="OneStopGamingModel.CartsProduct" Width="1.5" PointX="5.25" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OneStopGamingModel.CartsPromotion" Width="1.5" PointX="5.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OneStopGamingModel.Category" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OneStopGamingModel.Product" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OneStopGamingModel.Promotion" Width="1.5" PointX="3" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OneStopGamingModel.Publisher" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="OneStopGamingModel.PurchasedTogetherProduct" Width="1.5" PointX="5.25" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OneStopGamingModel.RelatedProduct" Width="1.5" PointX="5.25" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OneStopGamingModel.User" Width="1.5" PointX="0.75" PointY="10.125" IsExpanded="true" />
+        <AssociationConnector Association="OneStopGamingModel.FKCartsProductsCarts" ManuallyRouted="false" />
+        <AssociationConnector Association="OneStopGamingModel.FKCartsPromotionsCarts" ManuallyRouted="false" />
+        <AssociationConnector Association="OneStopGamingModel.FKCartsUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="OneStopGamingModel.FKCartsProductsProducts" ManuallyRouted="false" />
+        <AssociationConnector Association="OneStopGamingModel.FKCartsPromotionsProducts" ManuallyRouted="false" />
+        <AssociationConnector Association="OneStopGamingModel.FKCartsPromotionsPromotions" ManuallyRouted="false" />
+        <AssociationConnector Association="OneStopGamingModel.FKProductsCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="OneStopGamingModel.FKProductsPublishers" ManuallyRouted="false" />
+        <AssociationConnector Association="OneStopGamingModel.FKPurchasedTogetherProductsProducts1" ManuallyRouted="false" />
+        <AssociationConnector Association="OneStopGamingModel.FKPurchasedTogetherProductsProducts2" ManuallyRouted="false" />
+        <AssociationConnector Association="OneStopGamingModel.FKRelatedProductsProducts1" ManuallyRouted="false" />
+        <AssociationConnector Association="OneStopGamingModel.FKRelatedProductsProducts2" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

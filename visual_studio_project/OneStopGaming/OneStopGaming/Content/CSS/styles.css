@@ -1,0 +1,800 @@
+.header{
+	min-height: 90px;
+	background-image: url("../Images/onestopgaming_logo.png");
+	background-color: #006600;
+	background-repeat: no-repeat;
+	background-size: 350px;
+	background-position: center bottom;
+}
+
+body {
+	color: #00FF00;
+	background-color: #003300;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	width: 100%;
+	margin: 0px;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: #00FF00;
+	transition: color 0.5s;
+}
+
+a:hover {
+	color: #006600;
+}
+
+@media screen and (max-width: 720px) {
+	
+	.menu {
+		width: 100%;
+		text-align:center;
+		margin: 0px;
+		float: left;
+		box-sizing: border-box;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		transition: background-color 0.5s;
+		display: block;
+		text-decoration: none;
+		font-size: 120%;
+		color: #003300;
+		background-color: #00FF00;
+		border-top: solid;
+		border-color: grey;
+	}
+	
+	.menu:hover {
+		background-color: green;
+	}
+	
+	.nav {
+		background-color: #00FF00;
+		width: 100%;
+		margin: 0px;
+		float: left;
+		box-sizing: border-box;
+		display: none;
+	}
+
+	.nav .navlink {
+		width: 100%;
+		text-align:center;
+		margin: 0px;
+		float: left;
+		box-sizing: border-box;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		transition: background-color 0.5s;
+	}
+
+	.nav a {
+		display: block;
+		text-decoration: none;
+		font-size: 120%;
+		color: #003300;
+	}
+
+	.nav .navlink:hover {
+		background-color: green;
+	}
+	
+	/*The following are used primarily on the home page*/
+
+	.logo {
+		width: 100%;
+		padding-top: 20px;
+	}
+
+	.splash {
+		padding: 10px;
+		width: 100%;
+		margin: 0px;
+		box-sizing: border-box;
+		text-align:center;
+	}
+	
+	.splash img {
+		width: 60%
+	}
+
+	.splash .information {
+		width: 100%;
+		margin: 0px;
+		float: left;
+		display: inline-block;
+		box-sizing: border-box;
+	}
+
+	.splash .information form .textinput {
+		width: 30%;
+	}
+
+	.splash h3 {
+		font-style: italic;
+	}
+
+	.splash .icons {
+		padding-top: 10px;
+		float: right;
+		width: 100%;
+		margin: 0px;
+		display: inline-block;
+		box-sizing: border-box;
+	}
+
+	.splash .icons ul {
+		list-style: none;
+	}
+
+	.splash .icons li {
+		display: inline-block;
+		width: 100px;
+	}
+
+	.splash .icons img {
+		width: 13px;
+		height: 13px;
+	}
+
+	.featured {
+		display: inline-block;
+		padding: 20px;
+		float: left;
+		width: 100%;
+		margin: 0px;
+		max-height: 20%;
+		box-sizing: border-box;
+	}
+	
+	.featured h2 {
+		text-align: center;
+	}
+
+	.featured img {
+		width: 30%;
+		float: left;
+		padding-right: 30px;
+	}
+
+	.featured h3 {
+		text-decoration: underline;
+	}
+
+    .struck-price {
+        text-decoration: line-through;
+    }
+	
+	/* End home page styles */
+	
+	/*The following styles are used primarily on the products page*/
+	
+	.filters {
+		width: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+		display: inline-block;
+		text-align: center;
+	}
+	
+	.filters .filter-title {
+		font-size: 120%;
+		text-decoration: underline;
+	}
+	
+	.filters .filter-subtitle {
+		padding: 7px 0px;
+	}
+	
+	.filter {
+		font-size: 80%;
+		padding: 0px 10px;
+		display: inline-block;
+	}
+	
+	.filter .filter-item {
+		display: inline-block;
+	}
+
+	.items {
+		float: left;
+		padding: 30px 0px;
+		padding-top:0px;
+		margin: 0;
+		box-sizing: border-box;
+		width: 100%;
+	}
+	
+	.item {
+		float: left;
+		width: 100%;
+		padding: 2% 7%;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+	
+	.item .title {
+		font-size: 120%;
+	}
+	
+	.item .item-info {
+		text-align: center;
+		padding-bottom: 8px;
+		width: 100%;
+	}
+	
+	.item .box-art img {
+		display: block;
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.item .caboose {
+		box-sizing: border-box;
+		position: relative;
+		bottom: 30px;
+		margin-bottom: -30px;
+		text-align: center;
+	}
+	
+	.item .caboose img {
+		padding-left: 0px;
+		width: 100%;
+	}
+
+	.item .images {
+		padding: 0% 25%;
+	}
+	
+	.item a {
+		text-decoration: underline;
+	}
+
+	.paging {
+		width: 100%;
+		text-align: center;
+	}
+
+	.paging .current {
+		text-decoration:underline;
+	}
+	
+	/* End products page styles */
+	
+	/* The following styles are used primarily by the Cart page */
+	
+	.item .quantity {
+		padding: 10px 0px;
+		padding-bottom: 0px;
+	}
+	
+	.item input[type = "text"] {
+		width: 20px;
+		overflow: hidden;
+		display: inline-block;
+	}
+	
+	.item .quantity-input {
+		display: inline-block;
+	}
+	
+	.item .update-quantity {
+		display: inline-block;
+	}
+	
+	.item  .remove-button {
+		padding-bottom: 16px;
+	}
+	
+	.cart-items {
+		float: left;
+		padding: 30px 0px;
+		padding-top:0px;
+		margin: 0;
+		box-sizing: border-box;
+		width: 100%;
+		text-align: center;
+	}
+	
+	.cart-items .item .box-art img {
+		display: block;
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.cart-items .item .caboose img {
+		padding-left: 0px;
+		width: 80%;
+	}
+	
+	.totals {
+		text-align: right;
+		width: 80%;
+		margin: auto;
+	}
+	
+	.totals .labels {
+		display: inline-block;
+	}
+	
+	.totals .prices {
+		display: inline-block;
+	}
+	
+	.totals .grand-total {
+		padding-top: 14px;
+	}
+	
+	.totals .checkout {
+		padding: 10px 0px;
+		font-size: 140%;
+	}
+	
+	
+	/* End cart page styles */
+	
+	/* The following are primarily used on the Product details page */
+	
+	.details {
+		padding: 0px 20px;
+		width: 100%;
+		display: inline-block;
+		margin-bottom: 30px;
+	}
+	
+	.details-header{
+		padding-left: 20px;
+	}
+	
+	.details p {
+		padding-right: 50px;
+	}
+	
+	.details h2 {
+		text-decoration: underline;
+	}
+	
+	.details img {
+		width: 20%;
+		padding-right: 30px;
+		float: left;
+	}
+	
+	.frequents {
+		float: left;
+		padding: 50px 0px;
+		margin: 0;
+		box-sizing: border-box;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	
+	.frequent {
+		float: left;
+		padding: 20px 0px;
+		width: 100%;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+	
+	.frequent .box-art img{
+		display: block;
+		width: 35%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.plus{
+		float: left;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	
+	.plus  img{
+		display: block;
+		height: 25px;
+		width: 25px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.check {
+		width: 100%;
+		padding-bottom: 50px;
+		margin-left: 20px;
+		float: left;
+	}
+	
+	/* End products details page */
+
+	.footer {
+		padding: 50px;
+		padding-right: 0px;
+		padding-left: 0px;
+		font-size: 70%;
+		width: 100%;
+		text-align: center;
+		clear: both;
+	}
+
+}
+
+@media screen and (min-width: 721px) {
+
+	.menu {
+		display: none;
+	}
+
+	.nav {
+		background-color: #00FF00;
+		width: 100%;
+		margin: 0px;
+		float: left;
+		box-sizing: border-box;
+		display: block;
+	}
+
+	.nav .navlink {
+		border-top: solid;
+		border-color: grey;
+		width: 25%;
+		text-align:center;
+		margin: 0px;
+		float: left;
+		box-sizing: border-box;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		transition: background-color 0.5s;
+	}
+
+	.nav a {
+		display: block;
+		text-decoration: none;
+		color: #003300;
+		font-size: 120%;
+	}
+
+	.nav .navlink:hover {
+		background-color: green;
+	}
+
+	/*The following are used primarily on the home page*/
+	
+	.logo {
+		width: 100%;
+		padding-top: 20px;
+	}
+	
+	.splash {
+		padding-left: 10px;
+		width: 60%;
+		margin: 0px;
+		float: left;
+		box-sizing: border-box;
+	}
+
+	.splash .information {
+		width: 60%;
+		margin: 0px;
+		float: left;
+		display: inline-block;
+		box-sizing: border-box;
+	}
+
+	.splash .information form .textinput {
+		width: 30%;
+	}
+
+	.splash h3 {
+		font-style: italic;
+	}
+
+	.splash .icons {
+		padding-top: 10px;
+		float: right;
+		width: 40%;
+		margin: 0px;
+		display: inline-block;
+		box-sizing: border-box;
+	}
+
+	.splash .icons ul {
+		list-style: none;
+	}
+
+	.splash .icons li {
+		display: inline-block;
+		width: 100px;
+	}
+
+	.splash .icons img {
+		width: 13px;
+		height: 13px;
+	}
+
+	.featured {
+		display: inline-block;
+		padding-right: 20px;
+		float: right;
+		width: 40%;
+		margin: 0px;
+		max-height: 20%;
+		box-sizing: border-box;
+	}
+
+	.featured img {
+		width: 30%;
+		float: left;
+		padding-right: 30px;
+	}
+	
+	.featured h3 {
+		text-decoration: underline;
+	}
+
+    .struck-price {
+        text-decoration: line-through;
+    }
+	
+	/* End home page styles */
+	
+	/*The following styles are used primarily on the products page*/
+	
+	.filters {
+		float: left;
+		width: 18%;
+		padding: 10px;
+		box-sizing: border-box;
+		display: inline-block;
+		padding-top: 30px;
+	}
+	
+	.filters .filter-title {
+		font-size: 120%;
+		text-decoration: underline;
+	}
+	
+	.filters .filter-subtitle {
+		padding: 7px 5px;
+	}
+	
+	.filter {
+		font-size: 80%;
+		padding: 0px 10px;
+	}
+	
+	.filter .filter-item {
+	}
+
+	.items {
+		float: left;
+		padding: 30px 0px;
+		margin: 0;
+		box-sizing: border-box;
+		width: 82%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.item {
+		float: left;
+		width: 33.33%;
+		padding: 2% 7%;
+		box-sizing: border-box;
+		overflow: hidden;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	.item .title {
+		font-size: 120%;
+	}
+	
+	.item .item-info {
+		text-align: center;
+		padding: 8px;
+		width: 100%;
+	}
+	
+	.item .box-art img {
+		display: block;
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.item .caboose {
+		box-sizing: border-box;
+		position: relative;
+		bottom: 30px;
+		margin-bottom: -30px;
+		text-align: center;
+	}
+	
+	.item .caboose img {
+		padding-left: 0px;
+		width: 100%;
+	}
+
+	.item .images {
+		align-self: flex-end;
+	}
+	
+	.item a {
+		text-decoration: underline;
+	}
+
+	.paging {
+		width: 82%;
+		text-align: center;
+		float: right;
+	}
+
+	.paging .current {
+		text-decoration:underline;
+	}
+	
+	/* End products page styles */
+	
+	/* The following styles are used primarily by the Cart page */
+	
+	.item .quantity {
+		padding: 10px 0px;
+		padding-bottom: 0px;
+	}
+	
+	.item input[type = "text"] {
+		width: 20px;
+		overflow: hidden;
+		display: inline-block;
+	}
+	
+	.item .quantity-input {
+		display: inline-block;
+	}
+	
+	.item .update-quantity {
+		display: inline-block;
+	}
+	
+	.item  .remove-button {
+		padding-bottom: 16px;
+	}
+	
+	.cart-items {
+		float: left;
+		padding: 30px 0px;
+		margin: 0;
+		box-sizing: border-box;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+	}
+	
+	.cart-items .item .box-art img {
+		display: block;
+		width: 40%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.cart-items .item .caboose img {
+		padding-left: 0px;
+		width: 70%;
+	}
+	
+	.totals {
+		text-align: right;
+		width: 80%;
+		margin: auto;
+	}
+	
+	.totals .labels {
+		display: inline-block;
+	}
+	
+	.totals .prices {
+		display: inline-block;
+	}
+	
+	.totals .grand-total {
+		padding-top: 14px;
+	}
+	
+	.totals .checkout {
+		padding: 10px 0px;
+		font-size: 140%;
+	}
+	
+	/* End cart page styles */
+	
+		/* The following are primarily used on the Product details page */
+	
+	.details {
+		padding: 0px 20px;
+		width: 100%;
+		display: inline-block;
+		margin-bottom: 30px;
+	}
+	
+	.details-header{
+		padding-left: 20px;
+	}
+	
+	.details p {
+		padding-right: 50px;
+	}
+	
+	.details h2 {
+		text-decoration: underline;
+	}
+	
+	.details img {
+		width: 20%;
+		padding-right: 30px;
+		float: left;
+	}
+	
+	.frequents {
+		float: left;
+		padding: 50px 0px;
+		margin: 0;
+		box-sizing: border-box;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	
+	.frequent {
+		float: left;
+		width: 15%;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+	
+	.frequent .box-art img{
+		display: block;
+		width: 35%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.plus  img{
+		height: 25px;
+		width: 25px;
+	}
+
+	.check {
+	width: 100%;
+	padding-bottom: 50px;
+	margin-left: 20px;
+	float: left;
+	}
+	
+	/* End products details page */
+
+	.footer {
+		padding: 50px;
+		padding-right: 0px;
+		padding-left: 0px;
+		font-size: 70%;
+		width: 100%;
+		text-align: center;
+		clear: both;
+	}
+	
+}
+
+
+
+

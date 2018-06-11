@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Stop Gaming: @ViewBag.Title</title>
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/CSS/styles.css")
+
+</head>
+<body>
+	<a href = "/Home/Index">
+		<div class = "header">
+		</div>
+	</a>
+		
+	<div class = "menu">
+		Menu
+	</div>
+		
+	<div class="nav">
+		<a href="products.html"><div class = "navlink">Products</div></a>
+		<a href="/Cart/Index"><div class = "navlink">Cart</div></a>
+		<a href="index.html"><div class = "navlink">Stores</div></a>
+		<a href="index.html"><div class = "navlink">Help</div></a>
+	</div>
+    
+    @RenderBody()
+
+    <div class="footer">
+        &copy; 2015 Cody Davey and James Grams. All Rights Reserved. <br />
+        Address: 255 Grapevine Road, Wenham, MA  01984.
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/Scripts/site.js")
+    @Scripts.Render("~/Scripts/gamingNav.js")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

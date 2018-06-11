@@ -1,0 +1,23 @@
+﻿<div class="featured">
+    <h2>Featured Item</h2>
+    <a href="/Product/@Model.ID">
+        <img src="@Model.ImageUrl" alt="@Model.Name" />
+    </a>
+    <a href="/Product/@Model.ID">
+        <h3>@Model.Name</h3>
+    </a>
+    <div class="release_date">Release: @Model.ReleaseDate</div>
+    @{
+        if (Model.SalePrice == "")
+        {
+            <div class="price">Price: $@Model.Price</div>
+        }
+        else
+        {
+            <div class="price">Price: <span class="struck-price">$@Model.Price</span> $@Model.SalePrice</div>
+        }
+    }
+    <p>@Model.Description</p>
+    <span id="featuredProductId" hidden>@Model.ID</span>
+    <button type="button" id="addToCart">Add to Cart</button>
+</div>

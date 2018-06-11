@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<div class="splash">
+    <div class="information">
+        <!--<img class = "logo" src = "onestopgaming_logo.png" alt = "One Stop Gaming"/>-->
+        <h3>The one and only stop for all your gaming needs.</h3>
+        <p>
+            At one stop gaming we are looking to fulfill all of your needs as a gamer.
+            Come inside for the best deals on consoles, games, and applications that you won't
+            find anywhere else! Enter your zip code below to receive accurate prices!
+        </p>
+
+        @{
+            if (Request.Cookies["zip"] != null)
+            {
+                <input type="text" name="zip" placeholder="Zip: @Request.Cookies["zip"].Value" class="textinput" id="zipcode">
+            }
+            else
+            {
+                <input type="text" name="zip" placeholder="Zip Code" class="textinput" id="zipcode">
+            }
+        }
+        <input type="submit" value="Submit" id="zipsubmit">
+    </div>
+
+    <div class="icons">
+        <ul>
+                @foreach (var categoryViewModel in Model.CategoryViewModelList)
+                {
+                    <a href = "/Category/@categoryViewModel.ID">
+                        <li>
+                            <img src="@categoryViewModel.IconURL" alt= @categoryViewModel.Name> @categoryViewModel.Name
+                        </li>
+                    </a>
+                }
+        </ul>
+    </div>
+
+</div>
+
+@{
+    Html.RenderPartial("_Product", (OneStopGaming.Models.ProductViewModel)(Model.ProductViewModel));
+}
+
